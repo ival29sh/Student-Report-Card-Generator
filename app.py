@@ -8,8 +8,8 @@ import json
 import os
 import html
 
-HOST = "127.0.0.1"
-PORT = 8000
+HOST = "0.0.0.0"
+PORT = int(os.environ.get("PORT", 8000))
 DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "students.json")
 
 SUBJECTS = ["English", "Maths", "Science", "Computer", "Social Science"]
